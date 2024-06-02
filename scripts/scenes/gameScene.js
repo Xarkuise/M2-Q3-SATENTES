@@ -151,11 +151,11 @@ export default class gameScene extends Phaser.Scene {
     update() {
         if (this.allowMovement) {
             if (this.cursors.left.isDown) {
-                this.player.setVelocityX(-270);
+                this.player.setVelocityX(-200);
                 this.player.anims.play('walk', true);
                 this.player.flipX = true;
             } else if (this.cursors.right.isDown) {
-                this.player.setVelocityX(270);
+                this.player.setVelocityX(200);
                 this.player.anims.play('walk', true);
                 this.player.flipX = false;
             } else {
