@@ -133,7 +133,7 @@ export default class gameScene extends Phaser.Scene {
         this.cameras.main.startFollow(this.player);
 
         // Set initial zoom level (e.g., 2x zoom)
-        this.cameras.main.setZoom(1);
+        this.cameras.main.setZoom(2);
 
         //Movement event trigger
         this.allowMovement = true;
