@@ -40,7 +40,7 @@ export default class WinningScene extends Phaser.Scene {
             this.scene.start('gameScene');
         });  
 
-        const mainButton = this.add.text(600, 600, 'Main Menu', { fontSize: '32px', fill: '#fff' }).setOrigin(0.5).setInteractive();
+        const mainButton = this.add.text(600, 560, 'Main Menu', { fontSize: '32px', fill: '#fff' }).setOrigin(0.5).setInteractive();
         mainButton.on('pointerdown', () => {
             this.sound.stopAll(); // Stop all sounds before restarting
             this.scene.start('mainMenuScene');
